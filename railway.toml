@@ -1,3 +1,3 @@
 [deploy]
-startCommand = "EXCEL_FILES_PATH=/tmp/excel_files FASTMCP_PORT=$PORT FASTMCP_TRANSPORT=streamable-http python -m excel_mcp run"
+startCommand = "EXCEL_FILES_PATH=/tmp/excel_files FASTMCP_PORT=$PORT uvx excel-mcp-server streamable-http"
 restartPolicyType = "ON_FAILURE"
