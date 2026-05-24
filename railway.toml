@@ -1,0 +1,5 @@
+[deploy]
+startCommand = "EXCEL_FILES_PATH=/tmp/excel_files FASTMCP_PORT=$PORT FASTMCP_TRANSPORT=streamable-http python -m excel_mcp"
+healthcheckPath = "/"
+healthcheckTimeout = 30
+restartPolicyType = "on-failure"
